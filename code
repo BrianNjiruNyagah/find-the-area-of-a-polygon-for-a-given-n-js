@@ -1,0 +1,27 @@
+function shapeArea(n) {
+    
+    //declaration of variables to be used in the area calculation
+    var constant = n + (n-1);
+    var timer ;
+    var count = 0 ;
+    var count1= constant ;
+    
+    //sorting out the area of single unit
+    if(n != 1){
+        
+        //calculating the area of the polygon
+        for(;timer != 1;){
+            
+            timer = count1 - 2;
+            count1 = timer;
+            count = count + timer;
+
+       }
+       count *=2;
+       count = count + constant;
+    }else{
+        count ++;
+    }
+
+return count;
+}
